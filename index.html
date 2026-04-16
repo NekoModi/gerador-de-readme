@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readify - Gerador de README</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Readify</h1>
+      <p>Gerador inteligente de README para projetos</p>
+    </header>
+    <!-- INTRO -->
+    <section class="hero">
+      <h2>Crie READMEs profissionais em segundos</h2>
+      <p>
+        O Readify analisa seu projeto, detecta tecnologias e gera
+        automaticamente uma documentação pronta para GitHub.
+      </p>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="info">
+      <h3>Como funciona</h3>
+      <ul>
+        <li>Digite as informações do seu projeto</li>
+        <li>Escolha o tipo de template</li>
+        <li>Clique em gerar</li>
+        <li>Copie seu README pronto</li>
+      </ul>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+      <section class="form">
+        <h2>Gerar README</h2>
+
+        <input id="nomeProjeto" placeholder="Nome do projeto" />
+        <textarea id="descricao" placeholder="Descrição"></textarea>
+        <input
+          id="tecnologias"
+          placeholder="Tecnologias (separadas por virgula)"
+        />
+        <input id="autor" placeholder="Nome e sobrenome" />
+
+        <select id="template">
+          <option value="simples">Simples</option>
+          <option value="profissional">Profissional</option>
+          <option value="avancado">Avançado</option>
+        </select>
+
+        <button id="gerar">Gerar</button>
+      </section>
+
+      <section class="preview">
+        <h2>Preview</h2>
+        <pre id="resultado"></pre>
+        <button id="copiar">Copiar</button>
+      </section>
+    </main>
+  </body>
+</html>

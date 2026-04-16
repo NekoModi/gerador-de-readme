@@ -1,0 +1,125 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header*/
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111827;
+  border-radius: 12px;
+}
+
+/*body*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #e2e8f0;
+}
+html, body {
+  height: 100%;
+  background: #0f172a;
+}
+
+/*section*/
+section {
+  margin-bottom: 20px;
+}
+p, li, label {
+  color: #cbd5e1;
+}
+h1, h2, h3 {
+  margin-bottom: 10px;
+  color: #f1f5f9;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.hero {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border: 1px solid #334155;
+  border-radius: 12px;
+}
+
+/*section como funciona*/
+.info {
+ background: #111827;
+  border-left: 4px solid #194152;
+  border-radius: 10px;;
+}
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+.info li {
+  padding: 5px 0;
+}
+
+/*main*/
+main {
+  width: 100%;
+}
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+/*formulario*/
+.form, .preview {
+  flex: 1;
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+}
+input, textarea, select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #0b1220;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+/*resultado*/
+#resultado {
+  background: #0b1220;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  flex: 1;
+  height: 300px;
+  overflow: auto;
+  transition: 0.3s;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
